@@ -24,8 +24,9 @@ These recordings can then later be opened in Audacity for decoding picture and m
 
 What you will se in Audacity will be similar to this.
 
-Add image top on off
-Add image mid on off
+![screenshot](docs/images/top_on_off.png)
+![screenshot](docs/images/mid_on_off.png)
+
 
 The signal is composed of 4 parts.
 1. paring/start
@@ -43,7 +44,7 @@ Third is the on or off.
 
 Fourth is the group and this is which button you pressed.
 
-Add image of decoded signal.
+![screenshot](docs/images/20240327_090239626_iOS.jpg)
 
 As you can see the changing variable in the signal is the on/off and group while the controller id and paring stays constant. Knowing this it is easy for you to compare your signals and pick out what changes between button presses. When you have decoded your signal there is still one vital part missing to transmitt, the timing/pulselength. 
 
