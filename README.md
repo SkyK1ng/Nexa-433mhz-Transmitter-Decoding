@@ -14,19 +14,17 @@ Software:
 3. [SDR Sharp](https://airspy.com/download/)
 
 
-
 ## Decoding
-Recording the signal is done with a cheap SDR-dongel and a free sdr software such as SDRSharp. I recommend looking at some youtubevideos how to navigate the SDR software, it is easy and intuative but its easy to get lost in all the options and buttons!
+Recording the signal is done with a cheap SDR-dongel and a free sdr software such as SDRSharp. I recommend looking at some youtube videos how to navigate the SDR software, it is easy and intuative but its easy to get lost in all the options and buttons!
 
 After connecting the sdr to your computer you want to make recordings for each button press, both for on and off. *Remeber to give these recordings clear names! ie - button1_on, button1_off* 
 
-These recordings can then later be opened in Audacity for decoding picture and measurments.
+These recordings can then later be opened in Audacity for decoding and measurments.
 
-What you will se in Audacity will be similar to this.
+What you will se in Audacity will be 4 repeating signals similar to this.
 
 ![screenshot](docs/images/top_on_off.png)
 ![screenshot](docs/images/mid_on_off.png)
-
 
 The signal is composed of 4 parts.
 1. paring/start
@@ -38,7 +36,7 @@ Lets break it down. As you can se the signal almost looks identical and that is 
 
 First part of the signal is the paring, there is alot of noise around 433Mhz and the reciver (Wallsocket in my case) is waiting for this part to be recived before listning for something else. Therefore if you send the controller id + on/off + group without the paring nothing will happen.
 
-Second is the controller ID this is your remotes signature and allows more nexa reciver and transmitter to work in the same vicinity.
+Second is the controller ID this is your remotes signature and allows more nexa recivers and transmitters to work in the same vicinity.
 
 Third is the on or off.
 
@@ -52,6 +50,7 @@ The space between the highs and the lows are integral for the reciver to underst
 In my case the paring was 3000 microseconds and pulselength was 275 microseconds.
 
 Insert all these variables into the attached code and you are now able to transmitt and controll your 433Mhz devices!
+
 
 ### Wireing
 ![screenshot](docs/images/sketch_arduino_FS1000A.png)
